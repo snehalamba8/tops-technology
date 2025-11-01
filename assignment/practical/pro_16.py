@@ -1,0 +1,16 @@
+
+
+
+no = [1, 1, 1, 5, 5, 3, 1, 3, 3, 1, 4, 4, 4, 2, 2, 2, 2]
+
+freq = {}   
+
+for num in no:
+    if num in freq:
+        freq[num] += 1
+    else:
+        freq[num] = 1
+
+
+for key, value in freq.items():
+    print(f"{key} : {value}", end=" , ")
